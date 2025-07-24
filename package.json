@@ -1,0 +1,26 @@
+{
+  "name": "standards-development",
+  "version": "0.0.1",
+  "description": "UKHSA development standards for engineering teams.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky && git config commit.Template .gitmessage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ukhsa-collaboration/standards-development.git"
+  },
+  "homepage": "https://github.com/ukhsa-collaboration/standards-development",
+  "license": "MIT",
+  "engines": {
+    "npm": "10",
+    "node": "22"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
+  }
+}
