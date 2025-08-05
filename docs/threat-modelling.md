@@ -4,7 +4,7 @@
 
 Threat modelling is a structured approach to identifying and mitigating security risks early in the software delivery lifecycle. It helps teams design secure systems by understanding how data flows, where trust boundaries exist, and what threats may arise.
 
-All systems **MUST** include threat modelling as part of their design and delivery process. This applies to **ALL** systems — regardless of size, sensitivity or criticality.
+All systems **MUST** include threat modelling as part of their design and delivery process. This applies to **ALL** systems --- regardless of size, sensitivity or criticality.
 
 Threat modelling supports secure-by-design principles and helps ensure that appropriate controls are in place to protect public health data and maintain service availability.
 
@@ -24,10 +24,10 @@ Teams **MUST** carry out threat modelling:
 
 Teams **MUST** follow a structured approach such as the [OWASP Threat Modelling Process][3], which includes:
 
-1. **Decompose the system** — understand the architecture, data flows and trust boundaries
-2. **Identify threats** — use the STRIDE model to consider different types of risk
-3. **Mitigate risks** — define and implement appropriate security controls
-4. **Validate controls** — test that mitigations are effective
+1. **Decompose the system** --- understand the architecture, data flows and trust boundaries
+2. **Identify threats** --- use the STRIDE model to consider different types of risk
+3. **Mitigate risks** --- define and implement appropriate security controls
+4. **Validate controls** --- test that mitigations are effective
 
 Threat modelling **MUST** be integrated into the design phase of the [SDLC][4] and **MUST** inform security testing and backlog planning.
 
@@ -35,14 +35,14 @@ Threat modelling **MUST** be integrated into the design phase of the [SDLC][4] a
 
 Each threat model **MUST** include the following:
 
-- **System context** — including data sensitivity, user types and trust boundaries
-- **Data flow diagram** — showing key components, data stores and trust boundaries
-- **STRIDE threat analysis** — identifying threats for each component
-- **Risk assessment** — rating impact and likelihood
-- **Security controls** — mapped to threats, with gaps identified
-- **Security user stories** — added to the backlog with acceptance criteria
-- **Validation plan** — describing how controls will be tested
-- **Documentation** — stored in version control and updated regularly
+- **System context** --- including data sensitivity, user types and trust boundaries
+- **Data flow diagram** --- showing key components, data stores and trust boundaries
+- **STRIDE threat analysis** --- identifying threats for each component
+- **Risk assessment** --- rating impact and likelihood
+- **Security controls** --- mapped to threats, with gaps identified
+- **Security user stories** --- added to the backlog with acceptance criteria
+- **Validation plan** --- describing how controls will be tested
+- **Documentation** --- stored in version control and updated regularly
 
 Details of these deliverables are provided in the [Threat Modelling Appendix][5].
 

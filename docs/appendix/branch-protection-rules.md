@@ -10,8 +10,8 @@ All teams **MUST** configure branch protection for the default branch in every r
 
 GitHub supports two types of branch protection:
 
-- **Rulesets** (new style) — **MUST** be used for all new projects
-- **Legacy branch protection rules** — acceptable for existing projects, but teams **SHOULD** migrate to rulesets
+- **Rulesets** (new style) --- **MUST** be used for all new projects
+- **Legacy branch protection rules** --- acceptable for existing projects, but teams **SHOULD** migrate to rulesets
 
 In all cases, one or the other **MUST** be in place.
 

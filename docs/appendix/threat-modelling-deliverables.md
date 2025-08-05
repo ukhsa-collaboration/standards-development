@@ -30,12 +30,12 @@ They **SHOULD** be high-level and focus on data movement and trust relationships
 
 For each component or data flow, teams **MUST** consider the following threat categories:
 
-- **Spoofing** — impersonating users or systems
-- **Tampering** — modifying data or code
-- **Repudiation** — denying actions or transactions
-- **Information disclosure** — exposing sensitive data
-- **Denial of service** — disrupting availability
-- **Elevation of privilege** — gaining unauthorised access
+- **Spoofing** --- impersonating users or systems
+- **Tampering** --- modifying data or code
+- **Repudiation** --- denying actions or transactions
+- **Information disclosure** --- exposing sensitive data
+- **Denial of service** --- disrupting availability
+- **Elevation of privilege** --- gaining unauthorised access
 
 Each identified threat **MUST** be recorded with a description and mapped to the affected component.
 
@@ -43,8 +43,8 @@ Each identified threat **MUST** be recorded with a description and mapped to the
 
 Each threat **MUST** be assessed for:
 
-- **Impact** — high, medium or low
-- **Likelihood** — high, medium or low
+- **Impact** --- high, medium or low
+- **Likelihood** --- high, medium or low
 
 High-impact or high-likelihood threats **MUST** be prioritised.
 
@@ -101,12 +101,12 @@ Documentation **SHOULD** be lightweight and easy to maintain. Diagrams and bulle
 
 Teams **MUST** use:
 
-- **[draw.io][1]** — for creating data flow diagrams embedded in Confluence
+- **[draw.io][1]** --- for creating data flow diagrams embedded in Confluence
 
 Teams **SHOULD** use:
 
-- [OWASP Threat Dragon][4] — for diagramming and threat tracking
-- GitHub or other version control — to store and track threat models
+- [OWASP Threat Dragon][4] --- for diagramming and threat tracking
+- GitHub or other version control --- to store and track threat models
 
 ## References
 

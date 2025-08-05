@@ -4,7 +4,7 @@
 
 Security is a core part of how we design, build and operate digital services. Applying consistent security principles helps teams make informed decisions, reduce risk, and build systems that are resilient by default.
 
-Security must be considered from the outset and throughout the software delivery lifecycle — not added as an afterthought.
+Security must be considered from the outset and throughout the software delivery lifecycle --- not added as an afterthought.
 
 ## Guidance
 
