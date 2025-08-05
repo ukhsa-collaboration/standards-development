@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[DevOps Research and Assessment (DORA) metrics][2] help teams measure and improve how quickly and safely they deliver software. They focus on the flow of work from code commit to production, and are a key indicator of delivery performance.
+[DevOps Research and Assessment (DORA) metrics][2] help teams measure and improve how quickly and safely they deploy changes and main. They focus on the flow of work from code commit to production, and are a key indicator of delivery performance.
 
 These metrics are used across the industry to benchmark engineering teams and support continuous improvement. They are especially useful for identifying bottlenecks and improving team agility.
 
@@ -12,10 +12,16 @@ Teams **MUST** measure and review [DORA][2] metrics at least every two weeks.
 
 The four metrics are:
 
-1. [Deployment frequency](#deployment-frequency)
-2. [Lead time for changes](#lead-time-for-changes)
-3. [Change failure rate](#change-failure-rate)
-4. [Time to restore service](#time-to-restore-service)
+- [DORA metrics](#dora-metrics)
+  - [Introduction](#introduction)
+  - [Guidance](#guidance)
+  - [The metrics](#the-metrics)
+    - [Deployment frequency](#deployment-frequency)
+    - [Lead time for changes](#lead-time-for-changes)
+    - [Change failure rate](#change-failure-rate)
+    - [Time to restore service](#time-to-restore-service)
+  - [Measurement](#measurement)
+  - [References](#references)
 
 ## The metrics
 
