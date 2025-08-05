@@ -91,7 +91,7 @@ Platform-specific configuration (e.g. GitHub rulesets) is described in the [bran
 
 Use these indicators to assess how well source control practices are being followed:
 
-| ID   | Indicator                    | GREEN                                        | AMBER                            | RED                              |
+| ID   | Indicator                    | Green                                        | Amber                            | Red                              |
 | ---- | ---------------------------- | -------------------------------------------- | -------------------------------- | -------------------------------- |
 | SC-1 | Branch protection configured | All required settings enforced               | Some settings missing            | No protection in place           |
 | SC-2 | Commit hygiene               | Small, signed, well-described commits        | Inconsistent practices           | Large or unclear commits         |

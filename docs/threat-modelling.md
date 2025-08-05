@@ -56,7 +56,7 @@ All threat models **MUST** be:
 
 Use these indicators to assess the quality and effectiveness of threat modelling:
 
-| ID   | Indicator                       | GREEN                                                | AMBER                                    | RED                            |
+| ID   | Indicator                       | Green                                                | Amber                                    | Red                            |
 | ---- | ------------------------------- | ---------------------------------------------------- | ---------------------------------------- | ------------------------------ |
 | TM-1 | Threat model currency           | Updated within 30 days of changes or new threats     | Updated within 60 days                   | Outdated or not maintained     |
 | TM-2 | Required deliverables completed | **ALL** required deliverables present and complete   | Some deliverables missing or incomplete  | Deliverables missing or absent |
