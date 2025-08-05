@@ -17,16 +17,16 @@ Teams **MUST**:
 - define all environments in code using Infrastructure as Code (IaC)
 - use only approved data types in each environment
 - apply the required quality checks before promoting changes
-- ensure environments are reproducible and consistent
+- ensure all environments are reproducible and consistent, including local development environments
 - document promotion and deployment processes
 - define responsibilities for testing, validation, and deployment
 
 ### Environment sizing
 
-Environment sizing helps teams choose the right scale for the right purpose. Lightweight environments are fast and cost-effective, while full-scale environments replicate production conditions for high-assurance testing.
+Environment sizing helps teams choose the right scale for the right purpose:
 
-- **Lightweight**: Fast to provision, low-cost, not production-scale. Used for development, testing, and training.
-- **Full-scale**: Mirrors production scale and configuration. Used for staging and live operation.
+- **Lightweight**: Fast to provision, low-cost, not production-scale. May be short-lived or ephemeral. Used for development, testing, and training.
+- **Full-scale**: Mirrors production scale and configuration. Usually long-lived. Used for staging and live operation.
 
 ### Environment types
 
@@ -45,7 +45,7 @@ Each environment has a defined purpose, size, and data classification. The table
 
 #### Local development
 
-Local development environments are used by individual engineers to build and test features before sharing them with the team. These environments are fast, isolated, and ideal for early validation.
+Local development environments are used by individual engineers to build and test features before sharing them with the team. These environments are isolated and ideal for early validation.
 
 - **MUST** use only synthetic test data
 - **MUST** run unit tests before committing code
@@ -56,7 +56,7 @@ Local development environments are used by individual engineers to build and tes
 
 CI environments are ephemeral and automatically provisioned to validate changes on every pull request. They help catch issues early and enforce baseline quality standards.
 
-- **MUST** run on every pull request
+- **MUST** be created to run validation checks on every pull request
 - **MUST** include unit tests, linting, static analysis and dependency checks
 - **MUST** block merge if any required checks fail
 - **SHOULD** include automated accessibility testing
@@ -65,26 +65,26 @@ CI environments are ephemeral and automatically provisioned to validate changes 
 
 PR environments are optional, short-lived environments used to test specific branches before merging. They support exploratory testing and stakeholder review.
 
-- **MUST** be automatically destroyed after the PR is merged or closed
+- **MUST** be automatically created when a PR is created and destroyed after it is merged or closed
 - **MUST** support exploratory testing by a tester or product owner
 
 #### Development
 
 The development environment is shared by the team and used for integrated testing after code is merged to `main`. It helps validate that components work together as expected.
 
-- **MUST** deploy all team-owned components
+- **MUST** have all team-owned components deployed automatically on each merge to `main`.
 - **MUST** support exploratory testing if no PR environment exists
-- **SHOULD** stub or mock external dependencies
+- **SHOULD** use stubs or mocks of external dependencies
 
 #### Quality assurance (QA)
 
 QA environments are stable and used for formal testing, including regression and user acceptance testing. They provide a controlled space for validating system behaviour.
 
-- **MUST** be deployed manually
+- **MUST** have deployments triggered manually
 - **MUST** run full system regression tests
 - **MUST** deploy all team-owned components
 - **SHOULD** include user acceptance testing (UAT)
-- **SHOULD** stub or mock external dependencies
+- **SHOULD** use stubs or mocks of external dependencies
 
 #### Pre-production
 
@@ -92,6 +92,7 @@ Pre-production environments replicate production scale and configuration. They a
 
 - **MUST** mirror production configuration
 - **MUST** include all integrations
+- **MUST** have deployments triggered manually
 - **MUST** run functional sanity checks
 - **MUST** perform penetration and performance testing at agreed intervals
 - **SHOULD** use non-production instances of external services
@@ -101,6 +102,7 @@ Pre-production environments replicate production scale and configuration. They a
 The production environment serves real users and handles live data. It must be fully monitored, resilient, and secure.
 
 - **MUST** include all production components
+- **MUST** have deployments triggered manually
 - **MUST** run smoke tests after deployment
 - **MUST** trigger alerts on failure
 
@@ -109,16 +111,17 @@ The production environment serves real users and handles live data. It must be f
 Training environments are used for demonstrations and onboarding. They replicate production configuration but use only synthetic data.
 
 - **MUST** match production configuration
+- **MUST** have deployments triggered manually
 - **MUST** use only test data
 
 ## Measurement
 
 Measurement indicators help teams assess how well environments are defined, managed, and used. These indicators support continuous improvement and audit readiness.
 
-| ID    | Indicator                    | Green                        | Amber                         | Red                    |
-| ----- | ---------------------------- | ---------------------------- | ----------------------------- | ---------------------- |
-| ENV-1 | Environments defined in code | All environments IaC-managed | Some environments IaC-managed | Not reproducible       |
-| ENV-2 | Responsibilities defined     | Clear ownership for each     | Partial or informal ownership | No ownership defined   |
-| ENV-3 | Data usage                   | Correct data type in each    | Occasional misuse             | Live data in non-prod  |
-| ENV-4 | Quality checks applied       | All checks run and pass      | Some checks missing           | No checks applied      |
-| ENV-5 | Promotion process            | Manual or gated promotion    | Ad hoc promotion              | Uncontrolled promotion |
+| ID    | Indicator                    | Green                                       | Amber                                      | Red                             |
+| ----- | ---------------------------- | ------------------------------------------- | ------------------------------------------ | ------------------------------- |
+| ENV-1 | Environments defined in code | All environments IaC-managed                | Some environments IaC-managed              | Not reproducible                |
+| ENV-2 | Responsibilities defined     | Clear ownership for each                    | Partial or informal ownership              | No ownership defined            |
+| ENV-3 | Data usage                   | Correct data type in each                   | Low grade live data in non-prod            | Sensitive live data in non-prod |
+| ENV-4 | Quality checks applied       | All checks run and pass                     | Some checks missing                        | Important checks missing        |
+| ENV-5 | Promotion process            | Auditable approval process before promotion | Informal approval process before promotion | Ad-hoc promotion                |
