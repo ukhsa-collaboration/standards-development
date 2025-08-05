@@ -61,7 +61,7 @@ Clear roles help ensure that exceptions are handled consistently and reviewed by
 
 The following indicators help assess how well exceptions are being managed:
 
-| ID   | Indicator                     | GREEN                                                | AMBER                             | RED                              |
+| ID   | Indicator                     | Green                                                | Amber                             | Red                              |
 | ---- | ----------------------------- | ---------------------------------------------------- | --------------------------------- | -------------------------------- |
 | EX-1 | Exception documentation       | All exceptions documented with risk and rationale    | Some exceptions incomplete        | Exceptions undocumented          |
 | EX-2 | Approval process followed     | Approved at correct level with compensating controls | Some approvals missing or delayed | No approval or bypassed process  |

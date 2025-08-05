@@ -49,7 +49,7 @@ Clear roles help ensure that the standard is applied consistently and that teams
 
 The following indicators help assess how well teams are aligning with the [GDS Service Standard][2]:
 
-| ID    | Indicator                       | GREEN                                      | AMBER                                  | RED                                |
+| ID    | Indicator                       | Green                                      | Amber                                  | Red                                |
 | ----- | ------------------------------- | ------------------------------------------ | -------------------------------------- | ---------------------------------- |
 | GDS-1 | Standard understood and applied | All 14 points mapped to delivery practices | Some points addressed                  | No evidence of alignment           |
 | GDS-2 | Evidence maintained             | Evidence available for each point          | Partial or outdated evidence           | No evidence maintained             |

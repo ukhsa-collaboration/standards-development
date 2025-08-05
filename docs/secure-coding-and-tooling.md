@@ -44,7 +44,7 @@ Teams **SHOULD** choose tools that suit their technology stack and delivery cont
 
 Use these indicators to assess adoption and effectiveness of secure coding and tooling practices.
 
-| ID    | Indicator                | GREEN                                                               | AMBER                                                       | RED                                          |
+| ID    | Indicator                | Green                                                               | Amber                                                       | Red                                          |
 | ----- | ------------------------ | ------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------- |
 | SCT-1 | Static analysis in CI/CD | Enforced on **all branches** with blocking checks                   | Enforced on **main** branch only                            | Not enforced or bypassable                   |
 | SCT-2 | SCA reports reviewed     | Reviewed **regularly** with actions tracked in backlog              | Reviewed **occasionally** or inconsistently                 | Not reviewed or no evidence                  |

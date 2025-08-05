@@ -115,7 +115,7 @@ Training environments are used for demonstrations and onboarding. They replicate
 
 Measurement indicators help teams assess how well environments are defined, managed, and used. These indicators support continuous improvement and audit readiness.
 
-| ID    | Indicator                    | GREEN                        | AMBER                         | RED                    |
+| ID    | Indicator                    | Green                        | Amber                         | Red                    |
 | ----- | ---------------------------- | ---------------------------- | ----------------------------- | ---------------------- |
 | ENV-1 | Environments defined in code | All environments IaC-managed | Some environments IaC-managed | Not reproducible       |
 | ENV-2 | Responsibilities defined     | Clear ownership for each     | Partial or informal ownership | No ownership defined   |

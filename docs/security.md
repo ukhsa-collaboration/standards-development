@@ -24,7 +24,7 @@ Teams **SHOULD**:
 
 Use these indicators to assess how well security principles are embedded in team practices.
 
-| ID    | Indicator                                        | GREEN                                                   | AMBER                                 | RED                        |
+| ID    | Indicator                                        | Green                                                   | Amber                                 | Red                        |
 | ----- | ------------------------------------------------ | ------------------------------------------------------- | ------------------------------------- | -------------------------- |
 | SEC-1 | Security principles documented in team practices | Documented and reviewed quarterly                       | Documented but not regularly reviewed | Not documented             |
 | SEC-2 | Security considered throughout the SDLC          | Evident in planning, design, implementation and testing | Considered in some phases only        | Not considered             |
