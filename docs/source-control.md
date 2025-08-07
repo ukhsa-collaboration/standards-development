@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # Source control
 
 ## Introduction
@@ -115,5 +118,5 @@ Use these indicators to assess how well source control practices are being follo
 [4]: https://www.conventionalcommits.org
 [5]: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
 [6]: https://semver.org
-[7]: ../dev-standards/appendix/branch-protection-rules.md
+[7]: appendix/branch-protection-rules.md
 [8]: https://docs.github.com/en/get-started/using-github/github-flow

@@ -1,3 +1,12 @@
+---
+title: Development Standards
+caption: Development Standards
+includeInBreadcrumbs: true
+eleventyNavigation:
+  key: development-standards
+  parent: home
+order: 1
+---
 # Introduction
 
 At UKHSA, we build and operate digital services that support public health outcomes. To ensure these services are secure, reliable and maintainable, we follow a consistent set of engineering standards. These standards reflect industry best practice and are tailored to the unique needs of public sector delivery, including regulatory compliance, data protection and operational resilience.
