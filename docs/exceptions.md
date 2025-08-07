@@ -1,3 +1,6 @@
+---
+order: 16
+---
 # Exceptions
 
 ## Introduction
@@ -74,4 +77,4 @@ The following indicators help assess how well exceptions are being managed:
 - [Software Development Lifecycle][2]
 
 [1]: https://www.ncsc.gov.uk/collection/risk-management
-[2]: ../dev-standards/sdlc.md
+[2]: sdlc.md

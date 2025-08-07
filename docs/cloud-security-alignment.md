@@ -1,3 +1,6 @@
+---
+order: 8
+---
 # Cloud security alignment
 
 ## Introduction

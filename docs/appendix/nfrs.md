@@ -1,3 +1,6 @@
+---
+order: 3
+---
 # Non-functional requirements
 
 This appendix provides a comprehensive breakdown of non-functional requirements (NFRs) across key quality attributes. It expands on the main guidance by listing detailed expectations, controls, and validation criteria.

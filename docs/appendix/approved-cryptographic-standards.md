@@ -1,3 +1,6 @@
+---
+order: 1
+---
 # Approved cryptographic standards
 
 ## Introduction

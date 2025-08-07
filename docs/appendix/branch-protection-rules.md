@@ -1,3 +1,6 @@
+---
+order: 2
+---
 # Branch protection rules
 
 ## Introduction

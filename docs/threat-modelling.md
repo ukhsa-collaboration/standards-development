@@ -1,3 +1,6 @@
+---
+order: 15
+---
 # Threat modelling
 
 ## Introduction
@@ -74,5 +77,5 @@ Use these indicators to assess the quality and effectiveness of threat modelling
 [1]: https://www.gov.uk/government/publications/government-security-classifications
 [2]: https://www.ncsc.gov.uk/collection/building-a-security-operations-centre/threat-intelligence
 [3]: https://owasp.org/www-community/Threat_Modeling_Process
-[4]: ../dev-standards/sdlc.md
-[5]: ../dev-standards/appendix/threat-modelling-deliverables.md
+[4]: sdlc.md
+[5]: appendix/threat-modelling-deliverables.md

@@ -1,3 +1,6 @@
+---
+order: 9
+---
 # GDS service standard alignment
 
 ## Introduction
