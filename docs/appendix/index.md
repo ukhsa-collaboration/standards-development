@@ -5,7 +5,7 @@ eleventyNavigation:
   parent: development-standards
 # this order applies to the order of the pages in development-standards, not the order of the pages in this appendix
 # directory
-order: 17
+order: 16
 ---
 # Appendix
 
