@@ -4,7 +4,7 @@
 
 Exceptions are a formal mechanism for managing deviations from agreed standards. This guidance applies across all development standards, including security, architecture, environments, and delivery processes.
 
-Exceptions **MUST** be used when a required control, pattern or practice cannot be followed due to valid constraints. They help ensure that risks are understood, documented and appropriately managed.
+Exceptions **MUST** be used when a required ("MUST") standard cannot be followed due to valid constraints. They help ensure that risks are understood, documented and appropriately managed.
 
 Exceptions **MUST NOT** be used to bypass standards without due diligence. All exceptions **MUST** be time-bound, reviewed regularly and approved at the appropriate level based on risk and subject matter.
 
@@ -12,11 +12,11 @@ Exceptions **MUST NOT** be used to bypass standards without due diligence. All e
 
 ### When to raise an exception
 
-There are specific situations where an exception is required. Teams **MUST** raise an exception when:
+There are specific situations where an exception is required. Teams **MUST** raise an exception when a required standard:
 
-- a required control or standard cannot be implemented due to technical, operational or business constraints
-- a control is partially implemented or delayed beyond its expected timeline
-- a control is replaced with an alternative that does not meet the original requirement
+- cannot be implemented due to technical, operational or business constraints
+- is only partially implemented for a system that is in Beta or Live
+- is replaced with an alternative that does not meet the original requirement
 
 ### Exception process
 
@@ -25,7 +25,7 @@ To ensure consistency and accountability, teams **MUST** follow a structured pro
 - document the exception clearly, including the standard affected, reason for the exception and associated risks
 - assess the risk level (**LOW**, **MEDIUM**, **HIGH**, **CRITICAL**) based on impact and likelihood
 - define and implement compensating controls where possible
-- specify a time limit for the exception and a review date
+- specify an time limit for the exception and a review date based on the risk level
 - submit the exception for approval based on the assessed risk level and subject matter
 
 ### Approval thresholds
@@ -47,21 +47,11 @@ Once approved, exceptions must be actively managed. Teams **MUST**:
 - review **MEDIUM** and **LOW** exceptions at least annually
 - update or close exceptions when the original constraint is resolved
 
-## Roles and responsibilities
-
-Clear roles help ensure that exceptions are handled consistently and reviewed by the right people:
-
-- **Delivery teams** — responsible for identifying, documenting and proposing exceptions
-- **Security Architect** — responsible for reviewing, advising and approving **MEDIUM** risk security exceptions
-- **Solution or Technical Architect** — responsible for reviewing and approving **MEDIUM** risk non-security exceptions
-- **Deputy Director** — responsible for reviewing and approving **HIGH** and **CRITICAL** risk exceptions
-- **Technical leads** — responsible for approving **LOW** risk exceptions and ensuring compensating controls are in place
-
 ## Measurement
 
 The following indicators help assess how well exceptions are being managed:
 
-| ID   | Indicator                     | GREEN                                                | AMBER                             | RED                              |
+| ID   | Indicator                     | Green                                                | Amber                             | Red                              |
 | ---- | ----------------------------- | ---------------------------------------------------- | --------------------------------- | -------------------------------- |
 | EX-1 | Exception documentation       | All exceptions documented with risk and rationale    | Some exceptions incomplete        | Exceptions undocumented          |
 | EX-2 | Approval process followed     | Approved at correct level with compensating controls | Some approvals missing or delayed | No approval or bypassed process  |

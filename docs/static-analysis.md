@@ -46,7 +46,7 @@ For container images:
 
 Use these indicators to assess adoption and effectiveness of static analysis practices.
 
-| ID   | Indicator                        | GREEN                                                     | AMBER                                     | RED                             |
+| ID   | Indicator                        | Green                                                     | Amber                                     | Red                             |
 | ---- | -------------------------------- | --------------------------------------------------------- | ----------------------------------------- | ------------------------------- |
 | SA-1 | Static analysis on pull requests | Run on **every pull request** with all checks passing     | Run on some pull requests only            | Not run or results ignored      |
 | SA-2 | Application code scanning        | Tools configured and enforced for all supported languages | Tools used inconsistently or not enforced | Tools not used or misconfigured |

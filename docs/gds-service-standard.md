@@ -1,55 +1,54 @@
-# GDS service standard alignment
+# GDS Service Standard
 
 ## Introduction
 
 The [Government Digital Service (GDS) Service Standard][2] sets out what teams must do to build and run effective, user-centred digital services. It helps ensure services are accessible, secure and meet user needs.
 
-All teams **MUST** align with the [GDS Service Standard][2] when building or operating digital services. This includes internal tools, public-facing services and data platforms. The standard applies throughout the service lifecycle — from discovery to live operation.
+All teams **MUST** align with the Service Standard when building or operating digital services. This includes internal tools, public-facing services and data platforms. The standard applies throughout the service lifecycle --- from discovery to live operation.
 
 ## Guidance
 
 ### Applying the standard
 
-Teams are expected to embed the [GDS Service Standard][2] into their delivery approach from the outset. To do this effectively, teams **MUST**:
+Teams are expected to embed the Service Standard into their delivery approach from the outset. To do this effectively, teams **MUST**:
 
-- review the 14 points of the [GDS Service Standard][2] and understand how they apply to their service
+- review the 14 points of the Service Standard and understand how they apply to their service
 - embed the standard into delivery practices from the outset
-- ensure alignment is maintained through all phases: discovery, alpha, beta, live and retirement
-- prepare for service assessments where required
+- ensure they align through all stages: Discovery, Alpha, Beta, Live and Retirement
 
 In addition, teams **SHOULD**:
 
-- map each point of the standard to relevant team activities, artefacts or controls
-- use the standard to guide architectural, design and delivery decisions
+- map each point of the Service Standard to relevant team activities, artefacts or controls
+- use it to guide architectural, design and delivery decisions
 - review alignment regularly as the service evolves
 - use the [GDS service manual][1] as a reference for good practice
 
 ### Service assessments
 
-Some services may be subject to formal [GDS assessments][4]. These assessments help ensure that services meet the standard before progressing to the next phase.
+Some services may be subject to formal [GDS assessments][4]. These assessments help ensure that services meet the Service Standard before progressing to the next phase.
 
 Teams **MUST**:
 
 - engage with the assessment process early
-- maintain evidence of how the service meets each point of the standard
+- maintain evidence of how the service meets each point of the Service Standard
 - address any recommendations or actions from assessors
 
-Services that are not formally assessed **SHOULD** still use the standard as a benchmark for quality and user-centred design.
+Services that are not formally assessed **MUST** still use the Service Standard as a benchmark for quality and user-centred design.
 
 ## Roles and responsibilities
 
 Clear roles help ensure that the standard is applied consistently and that teams are prepared for assessments.
 
-- **Delivery teams** — responsible for understanding and applying the standard in day-to-day work
-- **Product managers** — responsible for ensuring the service meets user needs and aligns with the standard
-- **Service owners** — accountable for overall compliance with the standard and for engaging with assessments
-- **Architects and designers** — responsible for ensuring technical and design decisions support the standard
+- **Delivery teams** --- responsible for understanding and applying the standard in day-to-day work
+- **Product managers** --- responsible for ensuring the service meets user needs and aligns with the standard
+- **Service owners** --- accountable for overall compliance with the standard and for engaging with assessments
+- **Architects and designers** --- responsible for ensuring technical and design decisions support the standard
 
 ## Measurement
 
 The following indicators help assess how well teams are aligning with the [GDS Service Standard][2]:
 
-| ID    | Indicator                       | GREEN                                      | AMBER                                  | RED                                |
+| ID    | Indicator                       | Green                                      | Amber                                  | Red                                |
 | ----- | ------------------------------- | ------------------------------------------ | -------------------------------------- | ---------------------------------- |
 | GDS-1 | Standard understood and applied | All 14 points mapped to delivery practices | Some points addressed                  | No evidence of alignment           |
 | GDS-2 | Evidence maintained             | Evidence available for each point          | Partial or outdated evidence           | No evidence maintained             |

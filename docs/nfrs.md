@@ -48,7 +48,7 @@ Systems **MUST** meet legal, regulatory, and organisational compliance requireme
 
 ## Measurement
 
-| ID    | NFR Category  | GREEN (Meets)                     | AMBER (Partial)      | RED (Missing)             |
+| ID    | NFR Category  | Green                             | Amber                | Red                       |
 | ----- | ------------- | --------------------------------- | -------------------- | ------------------------- |
 | NFR-1 | Performance   | Meets all targets                 | Some targets unmet   | No targets or testing     |
 | NFR-2 | Availability  | Meets SLA, auto-recovery in place | Manual recovery only | Frequent outages          |
