@@ -5,6 +5,7 @@ eleventyNavigation:
   parent: home
 order: 1
 ---
+
 # Development Standards
 
 At UKHSA, we build and operate digital services that support public health outcomes. To ensure these services are secure, reliable and maintainable, we follow a consistent set of engineering standards. These standards reflect industry best practice and are tailored to the unique needs of public sector delivery, including regulatory compliance, data protection and operational resilience.
@@ -25,7 +26,7 @@ Intended audience:
 
 ## How to read the guidelines
 
-The following terms are used throughout this guidance to indicate the strength of each requirement. These are adapted from [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) and contextualised for UKHSA:
+The following terms are used throughout this guidance to indicate the strength of each requirement. These are adapted from [RFC 2119][1] and contextualised for UKHSA:
 
 - **MUST**: This requirement is mandatory. It applies universally and must be followed without exception unless formally approved.
 - **MUST NOT**: This action is explicitly prohibited. It must not be taken under any circumstances unless an approved exception is in place.
@@ -36,3 +37,5 @@ The following terms are used throughout this guidance to indicate the strength o
 ## Using these guidelines
 
 Each section of this site addresses a specific aspect of software development, including security, environments, quality assurance and measurement. Teams are expected to apply these standards consistently, and to document any exceptions with appropriate justification.
+
+[1]: https://datatracker.ietf.org/doc/html/rfc2119

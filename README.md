@@ -2,7 +2,7 @@
 
 Welcome to the UKHSA Development Standards repository. It contains guidelines and best practices for engineering teams who are designing, building, and maintaining software at UKHSA.
 
-## :construction: Work in progress :rotating_light:
+## :construction: Work in progress :rotating\_light:
 
 The content here is a work in progress. We are publishing it early to foster collaboration and encourage feedback.
 
@@ -22,7 +22,7 @@ Intended audience:
 
 ## How to read the guidelines
 
-The following terms are used throughout this guidance to indicate the strength of each requirement. These are adapted from [RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119) and contextualised for UKHSA:
+The following terms are used throughout this guidance to indicate the strength of each requirement. These are adapted from [RFC 2119][1] and contextualised for UKHSA:
 
 - **MUST**: This requirement is mandatory. It applies universally and must be followed without exception unless formally approved.
 - **MUST NOT**: This action is explicitly prohibited. It must not be taken under any circumstances unless an approved exception is in place.
@@ -36,20 +36,22 @@ Each section of this site addresses a specific aspect of software development, i
 
 ## Contributing
 
-We welcome contributions to improve these guidelines. Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get involved.
+We welcome contributions to improve these guidelines. Please read our [Contributing Guidelines][2] for details on how to get involved.
 
 ## Licence
 
-Unless stated otherwise, the codebase is released under [the MIT License][mit].
+Unless stated otherwise, the codebase is released under [the MIT License][3].
 This covers both the codebase and any sample code in the documentation.
 
-The documentation is [&copy; Crown copyright][copyright] and available under the terms
-of the [Open Government 3.0][ogl] licence.
+The documentation is [© Crown copyright][4] and available under the terms
+of the [Open Government 3.0][5] licence.
 
 ## Contact
 
 // TODO
 
-[mit]: LICENCE
-[copyright]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
-[ogl]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+[1]: https://datatracker.ietf.org/doc/html/rfc2119
+[2]: CONTRIBUTING.md
+[3]: LICENCE
+[4]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
+[5]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/

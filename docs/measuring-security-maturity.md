@@ -1,6 +1,7 @@
 ---
 order: 11
 ---
+
 # Measuring security maturity
 
 ## Introduction
@@ -24,10 +25,10 @@ Assessment results **MAY** be used to:
 
 ## Measurement
 
-| ID    | Indicator                             | Green                       | Amber                | Red          |
-| ----- | ------------------------------------- | --------------------------- | -------------------- | ------------ |
-| MSM-1 | RAG status recorded for each standard | Updated quarterly           | Updated annually     | Not recorded |
-| MSM-2 | Trends monitored over time            | Used to inform improvements | Tracked but not used | Not tracked  |
+| ID | Indicator | Green | Amber | Red |
+| - | - | - | - | - |
+| MSM-1 | RAG status recorded for each standard | Updated quarterly | Updated annually | Not recorded |
+| MSM-2 | Trends monitored over time | Used to inform improvements | Tracked but not used | Not tracked |
 
 ## References
 

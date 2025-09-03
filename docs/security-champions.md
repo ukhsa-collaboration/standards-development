@@ -1,6 +1,7 @@
 ---
 order: 10
 ---
+
 # Security champions
 
 ## Introduction
@@ -32,7 +33,7 @@ Champions **MAY**:
 
 Use these indicators to assess the presence and effectiveness of security champions in teams.
 
-| ID   | Indicator                        | GREEN                               | AMBER                           | RED                  |
-| ---- | -------------------------------- | ----------------------------------- | ------------------------------- | -------------------- |
+| ID | Indicator | GREEN | AMBER | RED |
+| - | - | - | - | - |
 | SC-1 | Security champion role is active | Named, trained and actively engaged | Named but not actively involved | No champion assigned |
-| SC-2 | Participation in security syncs  | Attends monthly or more             | Attends occasionally            | Does not attend      |
+| SC-2 | Participation in security syncs | Attends monthly or more | Attends occasionally | Does not attend |

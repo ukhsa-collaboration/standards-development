@@ -1,6 +1,7 @@
 ---
 order: 3
 ---
+
 # Non-functional requirements
 
 This appendix provides a comprehensive breakdown of non-functional requirements (NFRs) across key quality attributes. It expands on the main guidance by listing detailed expectations, controls, and validation criteria.
@@ -23,18 +24,18 @@ And a related quality user story might be:
 
 When scoping a piece of work, quality needs **MUST** be considered up front alongside functional needs. Specifically, the following **MUST** all be considered:
 
-- [Performance](#performance): Response times, throughput, and resource utilisation under normal and peak loads.
-- [Reliability](#reliability): System availability, fault tolerance, and error recovery capabilities.
-- [Security](#security): Data protection, authentication, authorisation, and compliance with relevant standards.
-- [Usability](#usability): User experience, accessibility, and ease of use across different user groups.
-- [Scalability](#scalability): Ability to handle increased load and growth in users or data volume.
-- [Maintainability](#maintainability): Code quality, documentation, and ease of future modifications.
-- [Compatibility](#compatibility): Cross-platform support, browser compatibility, and integration capabilities.
-- [Portability](#portability): Ability to deploy across different environments and infrastructure.
-- [Compliance](#compliance): Adherence to industry standards, regulations, and organisational policies.
-- [Monitoring](#monitoring): Observability, logging, and alerting capabilities for operational support.
+- [Performance][1]: Response times, throughput, and resource utilisation under normal and peak loads.
+- [Reliability][2]: System availability, fault tolerance, and error recovery capabilities.
+- [Security][3]: Data protection, authentication, authorisation, and compliance with relevant standards.
+- [Usability][4]: User experience, accessibility, and ease of use across different user groups.
+- [Scalability][5]: Ability to handle increased load and growth in users or data volume.
+- [Maintainability][6]: Code quality, documentation, and ease of future modifications.
+- [Compatibility][7]: Cross-platform support, browser compatibility, and integration capabilities.
+- [Portability][8]: Ability to deploy across different environments and infrastructure.
+- [Compliance][9]: Adherence to industry standards, regulations, and organisational policies.
+- [Monitoring][10]: Observability, logging, and alerting capabilities for operational support.
 
-Quality characteristics **MUST** be built into systems from the beginning rather than added as an afterthought. Teams **MUST** consider the architectural and design decisions needed to meet quality requirements during the [elaboration phase](./sdlc.md#elaboration) of each work item.
+Quality characteristics **MUST** be built into systems from the beginning rather than added as an afterthought. Teams **MUST** consider the architectural and design decisions needed to meet quality requirements during the [elaboration phase][11] of each work item.
 
 ## Performance
 
@@ -97,7 +98,7 @@ Reliability testing ensures the system operates consistently over time and recov
 
 ## Security
 
-Security **MUST** be built into the system architecture and design as described in the [Security](./security/index.md) section.
+Security **MUST** be built into the system architecture and design as described in the [Security][12] section.
 
 ## Usability
 
@@ -177,7 +178,7 @@ Systems **MUST** be designed for long-term maintainability:
 
 ### Validating maintainability
 
-Maintainability is primarily validated through code quality practices and ongoing monitoring as described in the [SDLC](./sdlc.md).
+Maintainability is primarily validated through code quality practices and ongoing monitoring as described in the [SDLC][13].
 
 ## Compatibility
 
@@ -290,3 +291,17 @@ Monitoring capabilities are validated through operational readiness testing:
 - Monitoring system resilience and failover.
 - Performance impact of monitoring on system resources.
 - Integration with incident management processes.
+
+[1]: #performance
+[2]: #reliability
+[3]: #security
+[4]: #usability
+[5]: #scalability
+[6]: #maintainability
+[7]: #compatibility
+[8]: #portability
+[9]: #compliance
+[10]: #monitoring
+[11]: ./sdlc.md#elaboration
+[12]: ./security/index.md
+[13]: ./sdlc.md

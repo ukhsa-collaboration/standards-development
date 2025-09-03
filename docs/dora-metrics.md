@@ -1,24 +1,25 @@
 ---
 order: 6
 ---
+
 # DORA metrics
 
 ## Introduction
 
-[DevOps Research and Assessment (DORA) metrics][2] help teams measure and improve how quickly and safely they deliver software. They focus on the flow of work from code commit to production, and are a key indicator of delivery performance.
+[DevOps Research and Assessment (DORA) metrics][1] help teams measure and improve how quickly and safely they deliver software. They focus on the flow of work from code commit to production, and are a key indicator of delivery performance.
 
 These metrics are used across the industry to benchmark engineering teams and support continuous improvement. They are especially useful for identifying bottlenecks and improving team agility.
 
 ## Guidance
 
-Teams **MUST** measure and review [DORA][2] metrics at least every two weeks.
+Teams **MUST** measure and review [DORA][1] metrics at least every two weeks.
 
 The four metrics are:
 
-1. [Deployment frequency](#deployment-frequency)
-2. [Lead time for changes](#lead-time-for-changes)
-3. [Change failure rate](#change-failure-rate)
-4. [Time to restore service](#time-to-restore-service)
+1. [Deployment frequency][2]
+1. [Lead time for changes][3]
+1. [Change failure rate][4]
+1. [Time to restore service][5]
 
 ## The metrics
 
@@ -78,17 +79,21 @@ Teams **SHOULD** aim to restore service in minutes or hours, not days.
 
 The following indicators help teams assess their software delivery performance against industry benchmarks and identify areas for improvement.
 
-| ID     | Indicator               | Green            | Amber       | Red              |
-| ------ | ----------------------- | ---------------- | ----------- | ---------------- |
-| DORA-1 | Deployment frequency    | Daily or more    | Weekly      | Less than weekly |
-| DORA-2 | Lead time for changes   | Minutes or hours | 1 to 3 days | More than 3 days |
-| DORA-3 | Change failure rate     | <10%             | 10–20%      | >20%             |
-| DORA-4 | Time to restore service | <1 hour          | 1–4 hours   | >4 hours         |
+| ID | Indicator | Green | Amber | Red |
+| - | - | - | - | - |
+| DORA-1 | Deployment frequency | Daily or more | Weekly | Less than weekly |
+| DORA-2 | Lead time for changes | Minutes or hours | 1 to 3 days | More than 3 days |
+| DORA-3 | Change failure rate | <10% | 10–20% | >20% |
+| DORA-4 | Time to restore service | <1 hour | 1–4 hours | >4 hours |
 
 ## References
 
-- [DORA metrics: How to measure Open DevOps success – Atlassian][1]
-- [DORA’s software delivery metrics: the four keys][2]
+- [DORA metrics: How to measure Open DevOps success – Atlassian][6]
+- [DORA’s software delivery metrics: the four keys][1]
 
-[1]: https://www.atlassian.com/devops/frameworks/dora-metrics
-[2]: https://dora.dev/guides/dora-metrics-four-keys
+[1]: https://dora.dev/guides/dora-metrics-four-keys
+[2]: #deployment-frequency
+[3]: #lead-time-for-changes
+[4]: #change-failure-rate
+[5]: #time-to-restore-service
+[6]: https://www.atlassian.com/devops/frameworks/dora-metrics

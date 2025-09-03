@@ -1,6 +1,7 @@
 ---
 order: 4
 ---
+
 # Secure coding and tooling
 
 ## Introduction
@@ -20,7 +21,7 @@ Teams **MUST**:
 
 Teams **SHOULD**:
 
-- use tools such as [SonarCloud][1], [Snyk][2], [CodeQL][5], and [detect-secrets][3] to automate scanning
+- use tools such as [SonarCloud][1], [Snyk][2], [CodeQL][3], and [detect-secrets][4] to automate scanning
 - keep CI/CD jobs short and isolated to reduce feedback time
 - run long-running scans asynchronously if they impact pipeline performance
 
@@ -35,36 +36,36 @@ The tools listed below help teams automate secure coding practices and reduce ma
 
 Teams **SHOULD** choose tools that suit their technology stack and delivery context, and **MUST** ensure they are properly configured and maintained.
 
-| Area                  | Tool                | Purpose                                                            |
-| --------------------- | ------------------- | ------------------------------------------------------------------ |
-| Code quality          | [SonarQube][1]      | Detects bugs, code smells and vulnerabilities                      |
-| Dependency management | [Dependabot][4]     | Automates updates to vulnerable dependencies                       |
-| Secrets detection     | [detect-secrets][3] | Prevents secrets from being committed                              |
-| Security scanning     | [CodeQL][5]         | Performs semantic code analysis to detect security vulnerabilities |
-| Security scanning     | [Snyk][2]           | Identifies known vulnerabilities in dependencies                   |
+| Area | Tool | Purpose |
+| - | - | - |
+| Code quality | [SonarQube][1] | Detects bugs, code smells and vulnerabilities |
+| Dependency management | [Dependabot][5] | Automates updates to vulnerable dependencies |
+| Secrets detection | [detect-secrets][4] | Prevents secrets from being committed |
+| Security scanning | [CodeQL][3] | Performs semantic code analysis to detect security vulnerabilities |
+| Security scanning | [Snyk][2] | Identifies known vulnerabilities in dependencies |
 
 ## Measurement
 
 Use these indicators to assess adoption and effectiveness of secure coding and tooling practices.
 
-| ID    | Indicator                | GREEN                                                               | AMBER                                                       | RED                                          |
-| ----- | ------------------------ | ------------------------------------------------------------------- | ----------------------------------------------------------- | -------------------------------------------- |
-| SCT-1 | Static analysis in CI/CD | Enforced on **all branches** with blocking checks                   | Enforced on **main** branch only                            | Not enforced or bypassable                   |
-| SCT-2 | SCA reports reviewed     | Reviewed **regularly** with actions tracked in backlog              | Reviewed **occasionally** or inconsistently                 | Not reviewed or no evidence                  |
-| SCT-3 | Secrets management       | No secrets in source control; scanning tools in place and effective | Secrets removed after detection; no scanning tools in place | Secrets present in code or committed by team |
-| SCT-4 | Tooling coverage         | All relevant tools integrated and actively used in CI/CD            | Some tools integrated or used manually                      | No tooling or ad hoc usage                   |
-| SCT-5 | Developer awareness      | All developers trained on secure coding and tooling practices       | Some developers trained or training outdated                | No training or awareness activity            |
+| ID | Indicator | GREEN | AMBER | RED |
+| - | - | - | - | - |
+| SCT-1 | Static analysis in CI/CD | Enforced on **all branches** with blocking checks | Enforced on **main** branch only | Not enforced or bypassable |
+| SCT-2 | SCA reports reviewed | Reviewed **regularly** with actions tracked in backlog | Reviewed **occasionally** or inconsistently | Not reviewed or no evidence |
+| SCT-3 | Secrets management | No secrets in source control; scanning tools in place and effective | Secrets removed after detection; no scanning tools in place | Secrets present in code or committed by team |
+| SCT-4 | Tooling coverage | All relevant tools integrated and actively used in CI/CD | Some tools integrated or used manually | No tooling or ad hoc usage |
+| SCT-5 | Developer awareness | All developers trained on secure coding and tooling practices | Some developers trained or training outdated | No training or awareness activity |
 
 ## References
 
-- [CodeQL][5]
-- [Dependabot][4]
-- [detect-secrets][3]
+- [CodeQL][3]
+- [Dependabot][5]
+- [detect-secrets][4]
 - [Snyk][2]
 - [SonarQube][1]
 
 [1]: https://www.sonarsource.com/products/sonarqube
 [2]: https://snyk.io
-[3]: https://github.com/Yelp/detect-secrets
-[4]: https://github.com/dependabot
-[5]: https://codeql.github.com
+[3]: https://codeql.github.com
+[4]: https://github.com/Yelp/detect-secrets
+[5]: https://github.com/dependabot

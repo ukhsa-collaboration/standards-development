@@ -1,6 +1,7 @@
 ---
 order: 3
 ---
+
 # Source control
 
 ## Introduction
@@ -38,13 +39,13 @@ Commits **MUST** be:
 - clearly described
 - linked to a work item (e.g. Jira ID)
 
-All commits **SHOULD** be [signed][5] to verify authorship and integrity. Signed commits help ensure that code changes come from trusted contributors and have not been tampered with.
+All commits **SHOULD** be [signed][4] to verify authorship and integrity. Signed commits help ensure that code changes come from trusted contributors and have not been tampered with.
 
-Commit messages **MAY** follow the [Conventional Commits][4] format.
+Commit messages **MAY** follow the [Conventional Commits][5] format.
 
 ### Branching strategy
 
-Teams **SHOULD** follow a [GitHub Flow][8]-style branching model.
+Teams **SHOULD** follow a [GitHub Flow][6]-style branching model.
 
 The default branch **SHOULD** be the only long-lived branch. Feature branches **MUST** be short-lived — ideally hours or days, and no more than two weeks.
 
@@ -59,7 +60,7 @@ Branch names **SHOULD** use a prefix to indicate purpose:
 
 When deploying to production, a Git tag **SHOULD** be added to the deployed commit.
 
-If versioning is used, tags **SHOULD** follow [Semantic Versioning][6].
+If versioning is used, tags **SHOULD** follow [Semantic Versioning][7].
 
 ### Pull requests and merge process
 
@@ -86,37 +87,37 @@ Teams **MUST** configure protection for the default branch to prevent accidental
 - requiring status checks to pass
 - blocking force pushes and deletions
 
-Platform-specific configuration (e.g. GitHub rulesets) is described in the [branch protection appendix][7].
+Platform-specific configuration (e.g. GitHub rulesets) is described in the [branch protection appendix][8].
 
----
+***
 
 ## Measurement
 
 Use these indicators to assess how well source control practices are being followed:
 
-| ID   | Indicator                    | GREEN                                        | AMBER                            | RED                              |
-| ---- | ---------------------------- | -------------------------------------------- | -------------------------------- | -------------------------------- |
-| SC-1 | Branch protection configured | All required settings enforced               | Some settings missing            | No protection in place           |
-| SC-2 | Commit hygiene               | Small, signed, well-described commits        | Inconsistent practices           | Large or unclear commits         |
-| SC-3 | Pull request process         | All changes via PR/MR with review and checks | Some bypasses or missing reviews | Direct commits to main           |
-| SC-4 | Branching strategy           | Short-lived branches with clear naming       | Mixed practices                  | Long-lived or unmanaged branches |
+| ID | Indicator | GREEN | AMBER | RED |
+| - | - | - | - | - |
+| SC-1 | Branch protection configured | All required settings enforced | Some settings missing | No protection in place |
+| SC-2 | Commit hygiene | Small, signed, well-described commits | Inconsistent practices | Large or unclear commits |
+| SC-3 | Pull request process | All changes via PR/MR with review and checks | Some bypasses or missing reviews | Direct commits to main |
+| SC-4 | Branching strategy | Short-lived branches with clear naming | Mixed practices | Long-lived or unmanaged branches |
 
----
+***
 
 ## References
 
-- [Branch protection appendix][7]
-- [Conventional commits][4]
+- [Branch protection appendix][8]
+- [Conventional commits][5]
 - [Git hosting decision tree][3]
-- [GitHub commit signature verification][5]
-- [GitHub flow][8]
-- [Semantic versioning][6]
+- [GitHub commit signature verification][4]
+- [GitHub flow][6]
+- [Semantic versioning][7]
 
 [1]: https://github.com/UKHSA-Internal
 [2]: https://github.com/ukhsa-collaboration
 [3]: https://ukhsa.atlassian.net/wiki/spaces/IDT/pages/164926907/UKHSA+Git+Hosting+-+Policy+Documentation#UKHSAGitHosting-PolicyDocumentation-GitHostingDecisionTree
-[4]: https://www.conventionalcommits.org
-[5]: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
-[6]: https://semver.org
-[7]: appendix/branch-protection-rules.md
-[8]: https://docs.github.com/en/get-started/using-github/github-flow
+[4]: https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits
+[5]: https://www.conventionalcommits.org
+[6]: https://docs.github.com/en/get-started/using-github/github-flow
+[7]: https://semver.org
+[8]: appendix/branch-protection-rules.md

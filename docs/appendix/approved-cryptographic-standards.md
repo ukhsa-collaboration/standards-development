@@ -1,6 +1,7 @@
 ---
 order: 1
 ---
+
 # Approved cryptographic standards
 
 ## Introduction
@@ -75,7 +76,12 @@ Teams **MUST NOT**:
 
 ## References
 
-- [NCSC Cryptographic Guidance](https://www.ncsc.gov.uk/section/advice-guidance/all-topics?topics=Cryptography&sort=date%2Bdesc)
-- [NIST Cryptographic Standards](https://www.nist.gov/cryptography)
-- [OWASP Cryptographic Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-- [UKHSA Encryption Standards](https://ukhsa.atlassian.net/wiki/spaces/AT/pages/170627302/Encryption+Standards)
+- [NCSC Cryptographic Guidance][1]
+- [NIST Cryptographic Standards][2]
+- [OWASP Cryptographic Storage Cheat Sheet][3]
+- [UKHSA Encryption Standards][4]
+
+[1]: https://www.ncsc.gov.uk/section/advice-guidance/all-topics?topics=Cryptography&sort=date%2Bdesc
+[2]: https://www.nist.gov/cryptography
+[3]: https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html
+[4]: https://ukhsa.atlassian.net/wiki/spaces/AT/pages/170627302/Encryption+Standards

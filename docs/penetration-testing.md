@@ -1,6 +1,7 @@
 ---
 order: 13
 ---
+
 # Penetration testing
 
 ## Introduction
@@ -30,13 +31,16 @@ Teams **SHOULD**:
 
 ## Measurement
 
-| ID   | Indicator                          | Green                                               | Amber                           | Red                        |
-| ---- | ---------------------------------- | --------------------------------------------------- | ------------------------------- | -------------------------- |
-| PT-1 | Initial penetration test completed | Completed and documented                            | Completed but not documented    | Not completed              |
-| PT-2 | Ongoing penetration testing        | Annual or change-driven tests conducted and tracked | Tests conducted but not tracked | Not conducted              |
-| PT-3 | Findings tracked and remediated    | All findings tracked and resolved                   | Some findings tracked           | No tracking or remediation |
+| ID | Indicator | Green | Amber | Red |
+| - | - | - | - | - |
+| PT-1 | Initial penetration test completed | Completed and documented | Completed but not documented | Not completed |
+| PT-2 | Ongoing penetration testing | Annual or change-driven tests conducted and tracked | Tests conducted but not tracked | Not conducted |
+| PT-3 | Findings tracked and remediated | All findings tracked and resolved | Some findings tracked | No tracking or remediation |
 
 ## References
 
-- [NCSC Penetration Testing Guidance](https://www.ncsc.gov.uk/guidance/penetration-testing)
-- [OWASP Penetration Testing Guide](https://owasp.org/www-project-web-security-testing-guide)
+- [NCSC Penetration Testing Guidance][1]
+- [OWASP Penetration Testing Guide][2]
+
+[1]: https://www.ncsc.gov.uk/guidance/penetration-testing
+[2]: https://owasp.org/www-project-web-security-testing-guide

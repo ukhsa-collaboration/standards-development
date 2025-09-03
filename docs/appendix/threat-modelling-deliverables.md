@@ -1,6 +1,7 @@
 ---
 order: 4
 ---
+
 # Threat modelling deliverables
 
 This appendix provides detailed guidance on the required outputs of threat modelling.
@@ -12,7 +13,7 @@ These deliverables help ensure that threat models are consistent, actionable and
 Teams **MUST** document:
 
 - a high-level description of the system and its purpose
-- the types of data processed, including [sensitivity classification][2]
+- the types of data processed, including [sensitivity classification][1]
 - user roles and trust boundaries
 - links to relevant architecture documentation
 
@@ -23,9 +24,9 @@ Teams **MUST** include a simple diagram that shows:
 - key components and data stores
 - external entities and integrations
 - trust boundaries between components
-- [data classifications][2] (e.g. personal, OFFICIAL, SECRET)
+- [data classifications][1] (e.g. personal, OFFICIAL, SECRET)
 
-Diagrams **MUST** be created using **[draw.io][1]** and embedded in **Confluence**.
+Diagrams **MUST** be created using **[draw.io][2]** and embedded in **Confluence**.
 
 They **SHOULD** be high-level and focus on data movement and trust relationships, not implementation detail.
 
@@ -71,8 +72,8 @@ For each high or medium risk, teams **MUST** create one or more security user st
 
 ### Example user story
 
-> As a GP accessing patient records  
-> I need to see only the health data for patients under my care  
+> As a GP accessing patient records\
+> I need to see only the health data for patients under my care\
 > So that I cannot accidentally access confidential information about other patients
 >
 > **Acceptance criteria**:
@@ -104,7 +105,7 @@ Documentation **SHOULD** be lightweight and easy to maintain. Diagrams and bulle
 
 Teams **MUST** use:
 
-- **[draw.io][1]** — for creating data flow diagrams embedded in Confluence
+- **[draw.io][2]** — for creating data flow diagrams embedded in Confluence
 
 Teams **SHOULD** use:
 
@@ -113,14 +114,14 @@ Teams **SHOULD** use:
 
 ## References
 
-- [draw.io][1]
-- [Government Security Classifications][2]
+- [draw.io][2]
+- [Government Security Classifications][1]
 - [NCSC Threat Intelligence][3]
 - [OWASP Threat Dragon][4]
 - [OWASP Threat Modelling Process][5]
 
-[1]: https://www.drawio.com
-[2]: https://www.gov.uk/government/publications/government-security-classifications
+[1]: https://www.gov.uk/government/publications/government-security-classifications
+[2]: https://www.drawio.com
 [3]: https://www.ncsc.gov.uk/collection/building-a-security-operations-centre/threat-intelligence
 [4]: https://owasp.org/www-project-threat-dragon
 [5]: https://owasp.org/www-community/Threat_Modeling_Process

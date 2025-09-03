@@ -1,6 +1,7 @@
 ---
 order: 15
 ---
+
 # Exceptions
 
 ## Introduction
@@ -35,11 +36,11 @@ To ensure consistency and accountability, teams **MUST** follow a structured pro
 
 The table below shows who is responsible for approving exceptions based on their risk level and subject matter:
 
-| Risk level              | Security exceptions | Other exceptions                |
-| ----------------------- | ------------------- | ------------------------------- |
-| **LOW**                 | Technical Lead      | Technical Lead                  |
-| **MEDIUM**              | Security Architect  | Solution or Technical Architect |
-| **HIGH** / **CRITICAL** | Deputy Director     | Deputy Director                 |
+| Risk level | Security exceptions | Other exceptions |
+| - | - | - |
+| **LOW** | Technical Lead | Technical Lead |
+| **MEDIUM** | Security Architect | Solution or Technical Architect |
+| **HIGH** / **CRITICAL** | Deputy Director | Deputy Director |
 
 ### Ongoing management
 
@@ -64,12 +65,12 @@ Clear roles help ensure that exceptions are handled consistently and reviewed by
 
 The following indicators help assess how well exceptions are being managed:
 
-| ID   | Indicator                     | GREEN                                                | AMBER                             | RED                              |
-| ---- | ----------------------------- | ---------------------------------------------------- | --------------------------------- | -------------------------------- |
-| EX-1 | Exception documentation       | All exceptions documented with risk and rationale    | Some exceptions incomplete        | Exceptions undocumented          |
-| EX-2 | Approval process followed     | Approved at correct level with compensating controls | Some approvals missing or delayed | No approval or bypassed process  |
-| EX-3 | Time-bound and reviewed       | All exceptions time-bound and reviewed on schedule   | Some exceptions overdue           | Exceptions not reviewed          |
-| EX-4 | Exception register maintained | Register up to date with status and review history   | Register partially maintained     | No register or tracking in place |
+| ID | Indicator | GREEN | AMBER | RED |
+| - | - | - | - | - |
+| EX-1 | Exception documentation | All exceptions documented with risk and rationale | Some exceptions incomplete | Exceptions undocumented |
+| EX-2 | Approval process followed | Approved at correct level with compensating controls | Some approvals missing or delayed | No approval or bypassed process |
+| EX-3 | Time-bound and reviewed | All exceptions time-bound and reviewed on schedule | Some exceptions overdue | Exceptions not reviewed |
+| EX-4 | Exception register maintained | Register up to date with status and review history | Register partially maintained | No register or tracking in place |
 
 ## References
 

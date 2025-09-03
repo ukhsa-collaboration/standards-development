@@ -1,13 +1,14 @@
 ---
 order: 12
 ---
+
 # Non-Functional Requirements (NFRs)
 
 ## Introduction
 
 Non-functional requirements (NFRs) define how a system should behave rather than what it should do. They ensure that services are secure, reliable, performant, and usable. This guidance outlines key NFR categories and summarises expectations using **RFC 2119** keywords.
 
----
+***
 
 ## Guidance
 
@@ -25,7 +26,7 @@ User interfaces **MUST** meet WCAG 2.1 AA standards. Teams **SHOULD** conduct us
 
 ### Security
 
-Systems **MUST** implement secure defaults, least privilege, and defence-in-depth. Teams **MUST** follow secure coding practices and **MUST** validate all inputs and outputs. Refer to the [Security Principles](./security.md) and [Secure SDLC](./secure-sdlc.md) guidance.
+Systems **MUST** implement secure defaults, least privilege, and defence-in-depth. Teams **MUST** follow secure coding practices and **MUST** validate all inputs and outputs. Refer to the [Security Principles][1] and [Secure SDLC][2] guidance.
 
 ### Maintainability
 
@@ -47,14 +48,17 @@ Services **SHOULD** be deployable across environments with minimal changes. Team
 
 Systems **MUST** meet legal, regulatory, and organisational compliance requirements. This includes data protection, auditability, and retention policies.
 
----
+***
 
 ## Measurement
 
-| ID    | NFR Category  | GREEN (Meets)                     | AMBER (Partial)      | RED (Missing)             |
-| ----- | ------------- | --------------------------------- | -------------------- | ------------------------- |
-| NFR-1 | Performance   | Meets all targets                 | Some targets unmet   | No targets or testing     |
-| NFR-2 | Availability  | Meets SLA, auto-recovery in place | Manual recovery only | Frequent outages          |
-| NFR-3 | Accessibility | WCAG 2.1 AA compliant             | Partial compliance   | No accessibility testing  |
-| NFR-4 | Security      | All controls implemented          | Some gaps            | No controls or validation |
-| NFR-5 | Observability | Logs, metrics, alerts in place    | Partial coverage     | No observability          |
+| ID | NFR Category | GREEN (Meets) | AMBER (Partial) | RED (Missing) |
+| - | - | - | - | - |
+| NFR-1 | Performance | Meets all targets | Some targets unmet | No targets or testing |
+| NFR-2 | Availability | Meets SLA, auto-recovery in place | Manual recovery only | Frequent outages |
+| NFR-3 | Accessibility | WCAG 2.1 AA compliant | Partial compliance | No accessibility testing |
+| NFR-4 | Security | All controls implemented | Some gaps | No controls or validation |
+| NFR-5 | Observability | Logs, metrics, alerts in place | Partial coverage | No observability |
+
+[1]: ./security.md
+[2]: ./secure-sdlc.md

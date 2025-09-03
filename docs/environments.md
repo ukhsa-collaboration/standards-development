@@ -1,6 +1,7 @@
 ---
 order: 2
 ---
+
 # Environments
 
 ## Introduction
@@ -35,16 +36,16 @@ Environment sizing helps teams choose the right scale for the right purpose. Lig
 
 Each environment has a defined purpose, size, and data classification. The table below summarises the key characteristics:
 
-| Environment            | Size        | Data allowed            | Purpose                     | Who uses it              |
-| ---------------------- | ----------- | ----------------------- | --------------------------- | ------------------------ |
-| Local development      | Lightweight | Synthetic only          | Feature development         | Engineers                |
-| Continuous integration | Lightweight | Synthetic only          | Automated validation        | CI/CD pipeline           |
-| Pull request           | Lightweight | Synthetic only          | Branch-specific testing     | Engineers, testers       |
-| Development            | Lightweight | Synthetic only          | Integrated testing          | Engineers, testers       |
-| Quality assurance      | Lightweight | Synthetic only          | Formal testing              | QA, product owners       |
-| Pre-production         | Full-scale  | Synthetic or anonymised | Final staging               | QA, security, operations |
-| Production             | Full-scale  | Live (including PII)    | Live service                | Users, operations        |
-| Training               | Lightweight | Synthetic only          | Training and demonstrations | Trainers, stakeholders   |
+| Environment | Size | Data allowed | Purpose | Who uses it |
+| - | - | - | - | - |
+| Local development | Lightweight | Synthetic only | Feature development | Engineers |
+| Continuous integration | Lightweight | Synthetic only | Automated validation | CI/CD pipeline |
+| Pull request | Lightweight | Synthetic only | Branch-specific testing | Engineers, testers |
+| Development | Lightweight | Synthetic only | Integrated testing | Engineers, testers |
+| Quality assurance | Lightweight | Synthetic only | Formal testing | QA, product owners |
+| Pre-production | Full-scale | Synthetic or anonymised | Final staging | QA, security, operations |
+| Production | Full-scale | Live (including PII) | Live service | Users, operations |
+| Training | Lightweight | Synthetic only | Training and demonstrations | Trainers, stakeholders |
 
 #### Local development
 
@@ -118,10 +119,10 @@ Training environments are used for demonstrations and onboarding. They replicate
 
 Measurement indicators help teams assess how well environments are defined, managed, and used. These indicators support continuous improvement and audit readiness.
 
-| ID    | Indicator                    | GREEN                        | AMBER                         | RED                    |
-| ----- | ---------------------------- | ---------------------------- | ----------------------------- | ---------------------- |
-| ENV-1 | Environments defined in code | All environments IaC-managed | Some environments IaC-managed | Not reproducible       |
-| ENV-2 | Responsibilities defined     | Clear ownership for each     | Partial or informal ownership | No ownership defined   |
-| ENV-3 | Data usage                   | Correct data type in each    | Occasional misuse             | Live data in non-prod  |
-| ENV-4 | Quality checks applied       | All checks run and pass      | Some checks missing           | No checks applied      |
-| ENV-5 | Promotion process            | Manual or gated promotion    | Ad hoc promotion              | Uncontrolled promotion |
+| ID | Indicator | GREEN | AMBER | RED |
+| - | - | - | - | - |
+| ENV-1 | Environments defined in code | All environments IaC-managed | Some environments IaC-managed | Not reproducible |
+| ENV-2 | Responsibilities defined | Clear ownership for each | Partial or informal ownership | No ownership defined |
+| ENV-3 | Data usage | Correct data type in each | Occasional misuse | Live data in non-prod |
+| ENV-4 | Quality checks applied | All checks run and pass | Some checks missing | No checks applied |
+| ENV-5 | Promotion process | Manual or gated promotion | Ad hoc promotion | Uncontrolled promotion |

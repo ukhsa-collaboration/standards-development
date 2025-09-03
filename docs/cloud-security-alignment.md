@@ -1,6 +1,7 @@
 ---
 order: 7
 ---
+
 # Cloud security alignment
 
 ## Introduction
@@ -23,13 +24,13 @@ Teams **MUST**:
 
 The following indicators help assess whether cloud security practices are being applied consistently and effectively.
 
-| ID    | Indicator                                     | Green                                                     | Amber                                      | Red                        |
-| ----- | --------------------------------------------- | --------------------------------------------------------- | ------------------------------------------ | -------------------------- |
-| CSA-1 | Cloud architecture reviews documented         | Reviewed and signed off by TRB                            | Reviewed informally                        | Not reviewed               |
-| CSA-2 | Data encryption applied                       | Encrypted in transit and at rest using approved standards | Partial encryption or non-standard methods | Not encrypted              |
-| CSA-3 | IAM policies follow least privilege           | All roles scoped to minimum required access               | Some roles overly permissive               | No access control strategy |
-| CSA-4 | Logging and alerting configurations validated | Validated and tested                                      | Configured but not tested                  | Not configured             |
-| CSA-5 | SOC onboarding completed                      | SOC integrated and alerting live                          | SOC engagement initiated                   | No SOC engagement          |
+| ID | Indicator | Green | Amber | Red |
+| - | - | - | - | - |
+| CSA-1 | Cloud architecture reviews documented | Reviewed and signed off by TRB | Reviewed informally | Not reviewed |
+| CSA-2 | Data encryption applied | Encrypted in transit and at rest using approved standards | Partial encryption or non-standard methods | Not encrypted |
+| CSA-3 | IAM policies follow least privilege | All roles scoped to minimum required access | Some roles overly permissive | No access control strategy |
+| CSA-4 | Logging and alerting configurations validated | Validated and tested | Configured but not tested | Not configured |
+| CSA-5 | SOC onboarding completed | SOC integrated and alerting live | SOC engagement initiated | No SOC engagement |
 
 ## References
 
