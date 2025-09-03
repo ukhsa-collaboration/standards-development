@@ -34,24 +34,33 @@ The following terms are used throughout this guidance to indicate the strength o
 
 Each section of this site addresses a specific aspect of software development, including security, environments, quality assurance and measurement. Teams are expected to apply these standards consistently, and to document any exceptions with appropriate justification.
 
+## Publishing
+
+When changes to the docs are merged into the `main` branch a [workflow][2] is started which triggers a release on the
+downstream [standards-org][3] repository.
+This means you need to ensure that your `main` branch contains what you're happy to be published to the standards-org
+website, so check before you merge!
+
 ## Contributing
 
-We welcome contributions to improve these guidelines. Please read our [Contributing Guidelines][2] for details on how to get involved.
+We welcome contributions to improve these guidelines. Please read our [Contributing Guidelines][4] for details on how to get involved.
 
 ## Licence
 
-Unless stated otherwise, the codebase is released under [the MIT License][3].
+Unless stated otherwise, the codebase is released under [the MIT License][5].
 This covers both the codebase and any sample code in the documentation.
 
-The documentation is [© Crown copyright][4] and available under the terms
-of the [Open Government 3.0][5] licence.
+The documentation is [© Crown copyright][6] and available under the terms
+of the [Open Government 3.0][7] licence.
 
 ## Contact
 
 // TODO
 
 [1]: https://datatracker.ietf.org/doc/html/rfc2119
-[2]: CONTRIBUTING.md
-[3]: LICENCE
-[4]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
-[5]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+[2]: .github/workflows/publish-guidelines.yml
+[3]: https://github.com/ukhsa-collaboration/standards-org
+[4]: CONTRIBUTING.md
+[5]: LICENCE
+[6]: https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/
+[7]: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
