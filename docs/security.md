@@ -1,4 +1,6 @@
 ---
+eleventyNavigation:
+    key: dev-security
 order: 9
 ---
 # Security
