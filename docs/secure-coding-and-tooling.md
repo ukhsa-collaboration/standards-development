@@ -15,9 +15,11 @@ This guidance sets out the minimum expectations for secure coding practices and 
 Teams **MUST**:
 
 - use static analysis tools to detect code quality and security issues before merging code
-- prevent secrets from being committed to source control
+- prevent secrets from being committed to source control (see [OWASP Secrets Management Cheat Sheet][6])
 - perform Software Composition Analysis (SCA) to identify supply chain risks
 - enforce security checks in CI/CD pipelines for all branches
+- store secrets only in approved secret managers (e.g. GitHub Actions Secrets, Azure Key Vault, AWS Secrets Manager)
+- store non-secret but potentially sensitive data in approved data stores (e.g. GitHub Actions, AWS Parameter Store, Azure App Configuration)
 
 Teams **SHOULD**:
 
@@ -28,7 +30,23 @@ Teams **SHOULD**:
 Teams **MUST NOT**:
 
 - merge code that fails static analysis or contains unresolved security issues
-- store credentials, tokens or other secrets in source control
+- store credentials, tokens, or other secrets in source control (including private repos)
+- store configuration, IPs, resource IDs or similar meta data in source control (including private repos)
+- rely on `.gitignore` or repo privacy for secret protection
+
+## Secrets management
+
+Secrets management is a critical change when using to GitHub Cloud to store source code.
+
+Teams must align with the [OWASP Secrets Management Cheat Sheet][6] and follow these minimum practices:
+
+- **Detect**: enable secret scanning and pre-commit hooks to stop secrets entering git history.
+- **Remove**: scrub any historical secrets before committing.
+- **Store securely**: use GitHub Actions Secrets, or an external secret manager (AWS Secrets Manager, Azure Key Vault).
+- **Rotate**: change secrets immediately if exposed or on a regular schedule.
+- **Automate**: avoid manual sharing; inject secrets into pipelines or runtimes only when needed.
+
+A secret is anything that grants access (credentials, tokens, keys, connection strings). Identifiers and metadata (e.g. IPs, ARNs, resource IDs, file paths) are not secrets, but may still be sensitive and useful to an attacker. Non-secret, but sensitive data should be handled carefully. Avoid hard-coding, minimise exposure in logs, and where practical store them in a parameter/configuration service (e.g. AWS Systems Manager Parameter Store, Azure App Configuration/Key Vault). **If in doubt, treat the data as a secret**.
 
 ## Recommended tools
 
@@ -63,9 +81,11 @@ Use these indicators to assess adoption and effectiveness of secure coding and t
 - [detect-secrets][4]
 - [Snyk][2]
 - [SonarQube][1]
+- [OWASP Secrets Management Cheat Sheet][6]
 
 [1]: https://www.sonarsource.com/products/sonarqube
 [2]: https://snyk.io
 [3]: https://codeql.github.com
 [4]: https://github.com/Yelp/detect-secrets
 [5]: https://github.com/dependabot
+[6]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
