@@ -18,8 +18,8 @@ Teams **MUST**:
 - prevent secrets from being committed to source control (see [OWASP Secrets Management Cheat Sheet][6])
 - perform Software Composition Analysis (SCA) to identify supply chain risks
 - enforce security checks in CI/CD pipelines for all branches
-- store secrets only in approved secret managers (e.g. GitHub Actions Secrets, Azure Key Vault, AWS Secrets Manager)
-- store non-secret but potentially sensitive data in approved data stores (e.g. GitHub Actions, AWS Parameter Store, Azure App Configuration)
+- store secrets only in recommended secret managers (e.g. GitHub Actions Secrets, Azure Key Vault, AWS Secrets Manager)
+- store non-secret but potentially sensitive data in recommended data stores (e.g. GitHub Actions, AWS Parameter Store, Azure App Configuration)
 
 Teams **SHOULD**:
 
@@ -36,17 +36,20 @@ Teams **MUST NOT**:
 
 ## Secrets management
 
-Secrets management is critical when using GitHub Cloud to store source code.
+Secrets management is critical when using any source control system to store code and configuration.
 
-Teams must align with the [OWASP Secrets Management Cheat Sheet][6] and follow these minimum practices:
+Teams **SHOULD** align with the [OWASP Secrets Management Cheat Sheet][6] and **MUST** follow these minimum practices:
 
 - **Detect**: enable secret scanning and pre-commit hooks to stop secrets entering git history.
 - **Remove**: scrub any historical secrets before committing.
 - **Store securely**: use GitHub Actions Secrets, or an external secret manager (AWS Secrets Manager, Azure Key Vault).
-- **Rotate**: change secrets immediately if exposed or on a regular schedule.
+- **Rotate**: change secrets immediately if exposed or compromised. Prefer short-lived or dynamic secrets where possible. For long-lived static secrets, set a risk-based maximum age until rotation can be automated.
 - **Automate**: avoid manual sharing; inject secrets into pipelines or runtimes only when needed.
 
-A secret is anything that grants access (credentials, tokens, keys, connection strings). Identifiers and metadata (e.g. IPs, ARNs, resource IDs, file paths) are not secrets, but may still be sensitive and useful to an attacker. Non-secret, but sensitive data should be handled carefully. Avoid hard-coding, minimise exposure in logs, and where practical store them in a parameter/configuration service (e.g. AWS Systems Manager Parameter Store, Azure App Configuration/Key Vault). **If in doubt, treat the data as a secret**.
+A secret is anything that grants access (credentials, tokens, keys, connection strings). Identifiers and metadata (e.g. IPs, ARNs, resource IDs, file paths) are not secrets, but may still be sensitive and useful to an attacker. Non-secret, but sensitive data should be handled carefully. Avoid hard-coding, minimise exposure in logs, and where practical store them in a parameter/configuration service (e.g. AWS Systems Manager Parameter Store, Azure App Configuration/Key Vault). 
+
+> [!TIP]
+> If in doubt, treat the data as a secret.
 
 ## Recommended tools
 
