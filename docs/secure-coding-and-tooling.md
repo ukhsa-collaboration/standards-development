@@ -36,7 +36,7 @@ Teams **MUST NOT**:
 
 ## Secrets management
 
-Secrets management is a critical change when using to GitHub Cloud to store source code.
+Secrets management is critical when using GitHub Cloud to store source code.
 
 Teams must align with the [OWASP Secrets Management Cheat Sheet][6] and follow these minimum practices:
 
