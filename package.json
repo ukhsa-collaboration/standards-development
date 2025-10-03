@@ -17,7 +17,7 @@
   "homepage": "https://github.com/ukhsa-collaboration/standards-development",
   "license": "MIT",
   "engines": {
-    "npm": "10",
+    "npm": ">=10",
     "node": "22"
   },
   "devDependencies": {
