@@ -15,7 +15,7 @@ This guidance sets out the minimum expectations for secure coding practices and 
 Teams **MUST**:
 
 - use static analysis tools to detect code quality and security issues before merging code
-- prevent secrets from being committed to source control (see [OWASP Secrets Management Cheat Sheet][6])
+- prevent secrets from being committed to source control (see [OWASP Secrets Management Cheat Sheet][1])
 - perform Software Composition Analysis (SCA) to identify supply chain risks
 - enforce security checks in CI/CD pipelines for all branches
 - store secrets only in recommended secret managers (e.g. GitHub Actions Secrets, Azure Key Vault, AWS Secrets Manager)
@@ -23,7 +23,7 @@ Teams **MUST**:
 
 Teams **SHOULD**:
 
-- use tools such as [SonarCloud][1], [Snyk][2], [CodeQL][3], and [detect-secrets][4] to automate scanning
+- use tools such as [SonarCloud][2], [Snyk][3], [CodeQL][4], and [detect-secrets][5] to automate scanning
 - keep CI/CD jobs short and isolated to reduce feedback time
 - run long-running scans asynchronously if they impact pipeline performance
 
@@ -38,7 +38,7 @@ Teams **MUST NOT**:
 
 Secrets management is critical when using any source control system to store code and configuration.
 
-Teams **SHOULD** align with the [OWASP Secrets Management Cheat Sheet][6] and **MUST** follow these minimum practices:
+Teams **SHOULD** align with the [OWASP Secrets Management Cheat Sheet][1] and **MUST** follow these minimum practices:
 
 - **Detect**: enable secret scanning and pre-commit hooks to stop secrets entering git history.
 - **Remove**: scrub any historical secrets before committing.
@@ -46,7 +46,7 @@ Teams **SHOULD** align with the [OWASP Secrets Management Cheat Sheet][6] and **
 - **Rotate**: change secrets immediately if exposed or compromised. Prefer short-lived or dynamic secrets where possible. For long-lived static secrets, set a risk-based maximum age until rotation can be automated.
 - **Automate**: avoid manual sharing; inject secrets into pipelines or runtimes only when needed.
 
-A secret is anything that grants access (credentials, tokens, keys, connection strings). Identifiers and metadata (e.g. IPs, ARNs, resource IDs, file paths) are not secrets, but may still be sensitive and useful to an attacker. Non-secret, but sensitive data should be handled carefully. Avoid hard-coding, minimise exposure in logs, and where practical store them in a parameter/configuration service (e.g. AWS Systems Manager Parameter Store, Azure App Configuration/Key Vault). 
+A secret is anything that grants access (credentials, tokens, keys, connection strings). Identifiers and metadata (e.g. IPs, ARNs, resource IDs, file paths) are not secrets, but may still be sensitive and useful to an attacker. Non-secret, but sensitive data should be handled carefully. Avoid hard-coding, minimise exposure in logs, and where practical store them in a parameter/configuration service (e.g. AWS Systems Manager Parameter Store, Azure App Configuration/Key Vault).
 
 > [!TIP]
 > If in doubt, treat the data as a secret.
@@ -59,11 +59,11 @@ Teams **SHOULD** choose tools that suit their technology stack and delivery cont
 
 | Area | Tool | Purpose |
 | - | - | - |
-| Code quality | [SonarQube][1] | Detects bugs, code smells and vulnerabilities |
-| Dependency management | [Dependabot][5] | Automates updates to vulnerable dependencies |
-| Secrets detection | [detect-secrets][4] | Prevents secrets from being committed |
-| Security scanning | [CodeQL][3] | Performs semantic code analysis to detect security vulnerabilities |
-| Security scanning | [Snyk][2] | Identifies known vulnerabilities in dependencies |
+| Code quality | [SonarQube][2] | Detects bugs, code smells and vulnerabilities |
+| Dependency management | [Dependabot][6] | Automates updates to vulnerable dependencies |
+| Secrets detection | [detect-secrets][5] | Prevents secrets from being committed |
+| Security scanning | [CodeQL][4] | Performs semantic code analysis to detect security vulnerabilities |
+| Security scanning | [Snyk][3] | Identifies known vulnerabilities in dependencies |
 
 ## Measurement
 
@@ -79,16 +79,16 @@ Use these indicators to assess adoption and effectiveness of secure coding and t
 
 ## References
 
-- [CodeQL][3]
-- [Dependabot][5]
-- [detect-secrets][4]
-- [Snyk][2]
-- [SonarQube][1]
-- [OWASP Secrets Management Cheat Sheet][6]
+- [CodeQL][4]
+- [Dependabot][6]
+- [detect-secrets][5]
+- [Snyk][3]
+- [SonarQube][2]
+- [OWASP Secrets Management Cheat Sheet][1]
 
-[1]: https://www.sonarsource.com/products/sonarqube
-[2]: https://snyk.io
-[3]: https://codeql.github.com
-[4]: https://github.com/Yelp/detect-secrets
-[5]: https://github.com/dependabot
-[6]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+[1]: https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html
+[2]: https://www.sonarsource.com/products/sonarqube
+[3]: https://snyk.io
+[4]: https://codeql.github.com
+[5]: https://github.com/Yelp/detect-secrets
+[6]: https://github.com/dependabot
