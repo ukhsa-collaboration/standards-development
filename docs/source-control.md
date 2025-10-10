@@ -47,14 +47,14 @@ Commit messages **MAY** follow the [Conventional Commits][5] format.
 
 Teams **SHOULD** follow a [GitHub Flow][6]-style branching model.
 
-The default branch **SHOULD** be the only long-lived branch. Feature branches **MUST** be short-lived — ideally hours or days, and no more than two weeks.
+The default branch **SHOULD** be the only long-lived branch. Feature branches **MUST** be short-lived --- ideally hours or days, and no more than two weeks.
 
 Branch names **SHOULD** use a prefix to indicate purpose:
 
-- `feature/` — functional changes
-- `bugfix/` — defect fixes
-- `spike/` — experimental work (not merged)
-- `hotfix/` — urgent fixes to production
+- `feature/` --- functional changes
+- `bugfix/` --- defect fixes
+- `spike/` --- experimental work (not merged)
+- `hotfix/` --- urgent fixes to production
 
 ### Tags and releases
 

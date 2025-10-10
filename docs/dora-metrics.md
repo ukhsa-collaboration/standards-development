@@ -53,7 +53,7 @@ Teams **SHOULD** aim for lead times of minutes or hours, and no more than a few 
 
 **Change failure rate** is the percentage of deployments that cause a failure in production.
 
-Some failures are expected — the goal is not to eliminate them entirely, but to reduce their impact and recover quickly.
+Some failures are expected --- the goal is not to eliminate them entirely, but to reduce their impact and recover quickly.
 
 Teams **SHOULD** focus on improving recovery time rather than chasing zero failures, which can lead to over-engineering and slower delivery.
 

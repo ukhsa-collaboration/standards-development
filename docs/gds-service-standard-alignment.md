@@ -8,7 +8,7 @@ order: 8
 
 The [Government Digital Service (GDS) Service Standard][1] sets out what teams must do to build and run effective, user-centred digital services. It helps ensure services are accessible, secure and meet user needs.
 
-All teams **MUST** align with the [GDS Service Standard][1] when building or operating digital services. This includes internal tools, public-facing services and data platforms. The standard applies throughout the service lifecycle — from discovery to live operation.
+All teams **MUST** align with the [GDS Service Standard][1] when building or operating digital services. This includes internal tools, public-facing services and data platforms. The standard applies throughout the service lifecycle --- from discovery to live operation.
 
 ## Guidance
 
@@ -44,10 +44,10 @@ Services that are not formally assessed **SHOULD** still use the standard as a b
 
 Clear roles help ensure that the standard is applied consistently and that teams are prepared for assessments.
 
-- **Delivery teams** — responsible for understanding and applying the standard in day-to-day work
-- **Product managers** — responsible for ensuring the service meets user needs and aligns with the standard
-- **Service owners** — accountable for overall compliance with the standard and for engaging with assessments
-- **Architects and designers** — responsible for ensuring technical and design decisions support the standard
+- **Delivery teams** --- responsible for understanding and applying the standard in day-to-day work
+- **Product managers** --- responsible for ensuring the service meets user needs and aligns with the standard
+- **Service owners** --- accountable for overall compliance with the standard and for engaging with assessments
+- **Architects and designers** --- responsible for ensuring technical and design decisions support the standard
 
 ## Measurement
 

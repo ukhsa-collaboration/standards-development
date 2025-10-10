@@ -55,11 +55,11 @@ Once approved, exceptions must be actively managed. Teams **MUST**:
 
 Clear roles help ensure that exceptions are handled consistently and reviewed by the right people:
 
-- **Delivery teams** — responsible for identifying, documenting and proposing exceptions
-- **Security Architect** — responsible for reviewing, advising and approving **MEDIUM** risk security exceptions
-- **Solution or Technical Architect** — responsible for reviewing and approving **MEDIUM** risk non-security exceptions
-- **Deputy Director** — responsible for reviewing and approving **HIGH** and **CRITICAL** risk exceptions
-- **Technical leads** — responsible for approving **LOW** risk exceptions and ensuring compensating controls are in place
+- **Delivery teams** --- responsible for identifying, documenting and proposing exceptions
+- **Security Architect** --- responsible for reviewing, advising and approving **MEDIUM** risk security exceptions
+- **Solution or Technical Architect** --- responsible for reviewing and approving **MEDIUM** risk non-security exceptions
+- **Deputy Director** --- responsible for reviewing and approving **HIGH** and **CRITICAL** risk exceptions
+- **Technical leads** --- responsible for approving **LOW** risk exceptions and ensuring compensating controls are in place
 
 ## Measurement
 
