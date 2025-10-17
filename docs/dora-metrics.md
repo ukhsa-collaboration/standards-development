@@ -34,6 +34,8 @@ Frequent, small deployments are preferred because they:
 - shorten the time to deliver value to users
 
 Teams **SHOULD** aim to deploy at least weekly, and ideally daily or more often.
+However, this should not be at the expense of quality.
+As the team's delivery practices mature shipping fast should be organically unlocked.
 
 ### Lead time for changes
 
@@ -53,7 +55,7 @@ Teams **SHOULD** aim for lead times of minutes or hours, and no more than a few 
 
 **Change failure rate** is the percentage of deployments that cause a failure in production.
 
-Some failures are expected --- the goal is not to eliminate them entirely, but to reduce their impact and recover quickly.
+Some failures are expected and the goal is not to eliminate them entirely, but to reduce their impact and recover quickly.
 
 Teams **SHOULD** focus on improving recovery time rather than chasing zero failures, which can lead to over-engineering and slower delivery.
 
@@ -81,7 +83,7 @@ The following indicators help teams assess their software delivery performance a
 
 | ID | Indicator | Green | Amber | Red |
 | - | - | - | - | - |
-| DORA-1 | Deployment frequency | Daily or more | Weekly | Less than weekly |
+| DORA-1 | Deployment frequency | One or more times per day | One or more times per week | Less than weekly |
 | DORA-2 | Lead time for changes | Minutes or hours | 1 to 3 days | More than 3 days |
 | DORA-3 | Change failure rate | <10% | 10–20% | >20% |
 | DORA-4 | Time to restore service | <1 hour | 1–4 hours | >4 hours |
