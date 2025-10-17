@@ -2,13 +2,13 @@
 order: 7
 ---
 
-# Cloud security alignment
+# Cloud security
 
 ## Introduction
 
 Cloud services **MUST** be designed and operated securely to protect sensitive data, maintain service availability and support public trust.
 
-This guidance helps teams build secure systems by aligning with cloud provider best practices, enforcing strong access controls and ensuring visibility through logging and monitoring.
+This guidance aims to help teams build secure systems by aligning with cloud provider best practices, enforcing strong access controls and ensuring visibility through logging and monitoring.
 
 ## Guidance
 
@@ -17,8 +17,15 @@ Teams **MUST**:
 - follow the **[AWS][1]** or **[Azure][2]** **Well-Architected Framework** security pillar
 - encrypt all data **in transit** and **at rest** using [approved cryptographic standards][3]
 - apply the **principle of least privilege** to all **IAM policies**, roles and permissions
+- use AWS Security Groups or Azure Network Security Groups to only allow necessary network connections
+- in AWS, configure CloudTrail, VPC Flow Logs, GuardDuty, and Config
+- in Azure, configure Activity Log retention, NSG Flow Logs, Microsoft Defender for Cloud, Azure Policy, and Azure Monitor
 - enable **centralised logging and monitoring**, integrated with the **Security Operations Centre (SOC)**
 - plan **SOC onboarding** early in the delivery lifecycle to ensure timely integration and alerting coverage
+
+Teams **SHOULD**:
+
+- configure AWS WAF and Shield Standard or Azure WAF and DDoS Protection Basic for externally-facing services
 
 ## Measurement
 
@@ -27,8 +34,8 @@ The following indicators help assess whether cloud security practices are being 
 | ID | Indicator | Green | Amber | Red |
 | - | - | - | - | - |
 | CSA-1 | Cloud architecture reviews documented | Reviewed and signed off by TRB | Reviewed informally | Not reviewed |
-| CSA-2 | Data encryption applied | Encrypted in transit and at rest using approved standards | Partial encryption or non-standard methods | Not encrypted |
-| CSA-3 | IAM policies follow least privilege | All roles scoped to minimum required access | Some roles overly permissive | No access control strategy |
+| CSA-2 | Data encryption applied | Encrypted in transit and at rest using approved standards | Encrypted in transit and at rest using slightly weaker standards than those approved | Not encrypted or encrypted using weak standards |
+| CSA-3 | IAM policies follow least privilege | All roles scoped to minimum required access | Minor cases where roles are overly permissive | Serious cases where roles are overly permissive |
 | CSA-4 | Logging and alerting configurations validated | Validated and tested | Configured but not tested | Not configured |
 | CSA-5 | SOC onboarding completed | SOC integrated and alerting live | SOC engagement initiated | No SOC engagement |
 
