@@ -2,13 +2,15 @@
 order: 8
 ---
 
-# GDS service standard alignment
+# GDS Service Standard
 
 ## Introduction
 
-The [Government Digital Service (GDS) Service Standard][1] sets out what teams must do to build and run effective, user-centred digital services. It helps ensure services are accessible, secure and meet user needs.
+The [Government Digital Service (GDS) Service Standard][1] sets out what teams must do to build and run effective, user-centred digital services.
+It helps ensure services are accessible, secure and meet user needs.
 
-All teams **MUST** align with the [GDS Service Standard][1] when building or operating digital services. This includes internal tools, public-facing services and data platforms. The standard applies throughout the service lifecycle --- from discovery to live operation.
+All teams **MUST** align with the [GDS Service Standard][1] when building or operating digital services. This includes internal tools, public-facing services and data platforms.
+The standard applies throughout the service lifecycle, from discovery to live operation.
 
 ## Guidance
 
@@ -23,19 +25,19 @@ Teams are expected to embed the [GDS Service Standard][1] into their delivery ap
 
 In addition, teams **SHOULD**:
 
-- map each point of the standard to relevant team activities, artefacts or controls
-- use the standard to guide architectural, design and delivery decisions
+- map each point of the [GDS Service Standard][1] to relevant team activities, artefacts or controls
+- use the [GDS Service Standard][1] to guide architectural, design and delivery decisions
 - review alignment regularly as the service evolves
 - use the [GDS service manual][2] as a reference for good practice
 
 ### Service assessments
 
-Some services may be subject to formal [GDS assessments][3]. These assessments help ensure that services meet the standard before progressing to the next phase.
+Some services may be subject to formal [GDS assessments][3]. These assessments help ensure that services meet the [GDS Service Standard][1] before progressing to the next phase.
 
 Teams **MUST**:
 
 - engage with the assessment process early
-- maintain evidence of how the service meets each point of the standard
+- maintain evidence of how the service meets each point of the [GDS Service Standard][1]
 - address any recommendations or actions from assessors
 
 Services that are not formally assessed **SHOULD** still use the standard as a benchmark for quality and user-centred design.
