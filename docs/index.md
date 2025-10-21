@@ -34,8 +34,14 @@ The following terms are used throughout this guidance to indicate the strength o
 - **SHOULD NOT**: This is a strong recommendation against a practice. Exceptions may exist, but they must be carefully considered, justified and documented.
 - **MAY**: This is an optional practice or recommendation. Teams may choose to adopt it based on context, value or preference.
 
-## Using these guidelines
+## How to use the guidelines
 
 Each section of this site addresses a specific aspect of software development, including security, environments, quality assurance and measurement. Teams are expected to apply these standards consistently, and to document any exceptions with appropriate justification.
+
+To ensure consistent and measurable adoption of engineering practices across UKHSA digital services, this framework defines a set of indicators for each principle (these can generally be found at the bottom of each page). These indicators help teams assess their current maturity, identify areas for improvement, and demonstrate progress over time.
+
+Each indicator is accompanied by a rating of either `Green`, `Amber`, or `Red` symbolising whether the indicator has been `Achieved`, `Partially Achieved`, or `Not Achieved` respectively. This enables teams to self-assess in a structured and repeatable way, and supports engineering leadership in tracking security posture across the organisation.
+
+The indicators are semantically numbered by principle (e.g. `SP-1`, `SDLC-2`) to support traceability and integration into dashboards, audits, and continuous improvement initiatives.
 
 [1]: https://datatracker.ietf.org/doc/html/rfc2119
