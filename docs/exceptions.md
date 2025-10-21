@@ -4,6 +4,9 @@ order: 15
 
 # Exceptions
 
+> [!TIP]
+> This document is not about exceptions in code, it's about exceptions that occur during any phase of a project's lifetime and explores the most effective methods for managing and mitigating the associated risks.
+
 ## Introduction
 
 Exceptions are a formal mechanism for managing deviations from agreed standards. This guidance applies across all development standards, including security, architecture, environments, and delivery processes.
