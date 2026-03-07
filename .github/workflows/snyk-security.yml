@@ -1,0 +1,45 @@
+name: Snyk Security Scan
+
+on:
+  push:
+    branches: [ feature/snyk_integration ]
+  pull_request:
+
+jobs:
+  snyk-security:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
+      - name: Authenticate to Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
+      - name: Run Open Source Scan
+        run: snyk test --all-projects --severity-threshold=high
+       # continue-on-error: true
+
+      - name: Run SAST Scan
+        run: snyk code test
+       # continue-on-error: true
+
+      # - name: Container Scan 
+      #   run: |
+      #     if [ -f "Dockerfile" ]; then
+      #       docker build -t test-image .
+      #       snyk container test test-image
+      #     else
+      #       echo "No Dockerfile found, skipping container scan"
+      #     fi  
+
+      # - name: Monitor Project in Snyk Dashboard
+      #   run: snyk monitor --all-projects
